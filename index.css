@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Reset */
+*{
+    margin:0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+
+/* general */
+body{
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+    min-width: 400px;
+    background-color: rgb(240, 212, 240);
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+header h1{
+    font-weight: 600;
+}
+.header img{
+    margin-right: 10px;
+}
+.container{
+    background-color: whitesmoke;
+    font-size: 1.25rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 70%;
+    max-width: 600px;
+    max-height: 100%;
+    line-height: 1.4;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    
+}
+
+.container details {
+    margin-bottom: 10px; 
+    width: 100%;
+    border-bottom: 1px solid #33333327;
+}
+
+.container details summary {
+    font-weight: 600;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.container details summary svg {
+    position: absolute;
+    right: 1rem; /* Adjust position of plus icon */
+}
+
+.container details p{
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: 300;
+    color: rgb(46, 6, 81);
+}
+
+.container details[open] .svg_minus {
+    display: inline-block;
+}
+
+.container details:not([open]) .svg_minus {
+    display: none;
+}
+
+.container details[open] .svg_plus {
+    display: none;
+}
+
+.container details:not([open]) .svg_plus {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
